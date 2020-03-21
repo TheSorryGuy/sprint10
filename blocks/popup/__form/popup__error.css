@@ -1,0 +1,13 @@
+
+.popup__error_first {
+    position: relative;
+    top: -9px;
+}
+
+.popup__error {
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    margin: 0;
+    height: 15px;
+}
