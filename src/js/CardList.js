@@ -1,6 +1,6 @@
 
 
-class CardList {
+export default class CardList {
     
     
     constructor(container, creator) {

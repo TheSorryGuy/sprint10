@@ -1,6 +1,6 @@
 
 
-class Api {
+export default class Api {
     
     
     constructor(options, loadingFunc) {

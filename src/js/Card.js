@@ -1,6 +1,6 @@
 
 
-class Card {
+export default class Card {
     constructor(popup, switcher, popupContent, me, api) {
         this.popup = popup;
         this.switcher = switcher;

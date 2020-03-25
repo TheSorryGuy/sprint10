@@ -1,6 +1,6 @@
 
 
-class UserInfo {
+export default class UserInfo {
   setUserInfo(profile, container) {
     const nameInput = container.querySelector('form').name;
     const jobInput = container.querySelector('form').job;
