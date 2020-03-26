@@ -9,7 +9,7 @@ import Popup from './js/Popup.js';
 import UserInfo from './js/UserInfo.js';
 
 const closeImage = document.querySelector('#close').content.querySelector('.popup__close');
-console.log(123)
+
 
 const popupContent = {
     addForm: `<div class="popup__content">
