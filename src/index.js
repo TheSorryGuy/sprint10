@@ -8,10 +8,12 @@ import FormValidator from './js/FormValidator.js';
 import Popup from './js/Popup.js';
 import UserInfo from './js/UserInfo.js';
 
+const closeImage = document.querySelector('#close').content.querySelector('.popup__close');
+console.log(123)
 
 const popupContent = {
     addForm: `<div class="popup__content">
-                    <img src="./images/close.svg" alt="" class="popup__close">
+                    <img src="${closeImage.src}" alt="" class="popup__close">
                     <h3 class="popup__title">Новое место</h3>
                     <form class="popup__form" name="form">
                         <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required minlength="2" maxlength="30">
@@ -22,7 +24,7 @@ const popupContent = {
                     </form>
                 </div>`,
     editForm: `<div class="popup__content">
-                    <img src="./images/close.svg" alt="" class="popup__close">
+                    <img src="${closeImage.src}" alt="" class="popup__close">
                     <h3 class="popup__title">Редактировать профиль</h3>
                     <form class="popup__form" name="form">
                         <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" required minlength="2" maxlength="30">
@@ -35,13 +37,13 @@ const popupContent = {
                 </div> -->`,
     openImage: `<div class="popup__image-container">
                     <img src='' alt='' class='popup__image'>
-                    <img src="./images/close.svg" alt="" class="popup__close">
+                    <img src="${closeImage.src}" alt="" class="popup__close">
                 </div>`,
     editPhoto: `<div class="popup__content">
-                  <img src="./images/close.svg" alt="" class="popup__close">
+                  <img src="${closeImage.src}" alt="" class="popup__close">
                   <h3 class="popup__title">Обновить аватар</h3>
                   <form class="popup__form" name="form">
-                      <input type="text" name="link" class="popup__input popup__input_type_name" placeholder="Ссылка на аватар" required pattern='https://.*'>
+                      <input type="text" name="link" class="popup__input popup__input_type_name" placeholder="Ссылка на аватар" required pattern="https?://.*">
                       <p class='popup__error'></p>
                       <button type class="button popup__button popup__button_edit">Сохранить</button>
                   </form>
