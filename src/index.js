@@ -35,7 +35,7 @@ const popupContent = {
                 </div> -->`,
     openImage: `<div class="popup__image-container">
                     <img src='' alt='' class='popup__image'>
-                    <img src="<./images/close.svg>" alt="" class="popup__close">
+                    <img src="./images/close.svg" alt="" class="popup__close">
                 </div>`,
     editPhoto: `<div class="popup__content">
                   <img src="./images/close.svg" alt="" class="popup__close">
@@ -54,8 +54,14 @@ const popupContent = {
     emptyError: 'Это обязательное поле'
   }
   
+  let envVar = 's'
+  if (process.env.NODE_ENV === 'development') {
+    envVar = ''
+  }
+
+  
   const apiOptions = {
-    baseUrl: 'https://praktikum.tk/cohort8',
+    baseUrl: `http${envVar}://praktikum.tk/cohort8`,
     headers: {
       authorization: '682b14b7-c7e2-4dc0-a094-2b5f70584193',
       'Content-Type': 'application/json'

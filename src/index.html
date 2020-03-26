@@ -12,7 +12,7 @@
   <div class="root">
     
     <header class="header root__section">
-      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     
     <div class="profile root__section">
@@ -30,7 +30,9 @@
     
     <div class="places-list root__section"></div>
     
-    <div class="popup"></div>
+    <div class="popup">
+      
+    </div>
     
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>

@@ -1,6 +1,6 @@
 {
   "name": "sprint10",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "praktikum project",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/TheSorryGuy/sprint10.git"
   },
-  "author": "",
+  "author": "Fedor Ganin (github.com/TheSorryGuy/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TheSorryGuy/sprint10/issues"
