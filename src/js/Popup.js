@@ -1,6 +1,6 @@
 
 
-class Popup {
+export default class Popup {
     constructor(popup, validator) {
         this.popup = popup;
         this.validator = validator;

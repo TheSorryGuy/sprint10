@@ -12,7 +12,7 @@
 }
 
 .user-info__photo:hover {
-  opacity: 60%;
+  opacity: .6;
 }
 
 @media screen and (max-width: 980px) {
