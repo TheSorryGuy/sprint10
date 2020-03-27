@@ -155,7 +155,7 @@ const popupContent = {
           alert("Ошибка при обновлении аватара");
           console.log(err);
       })
-      .finally(this.loadingFunc(false));
+      .finally(api.loadingFunc(false));
   }
   
   

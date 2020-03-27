@@ -1,6 +1,6 @@
 This is a **training project**
 ```
-version: 0.0.4
+version: 0.0.5
 author: Fedor Ganin 
 https://github.com/TheSorryGuy/sprint10/
 ```
